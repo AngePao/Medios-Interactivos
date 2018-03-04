@@ -46,6 +46,8 @@ function draw() {
   
   minutoMapeado= map(minuto,0,59,0,359);
   horaMapeada= map(hora,0,12,0,359);
+  
+//triángulo sin relleno morado, en la esquina superior se mueve conforme a los segundos y la esquina inferior se mueve como para mi los segundos //
 push();
   noFill();
   stroke('purple')
@@ -58,6 +60,7 @@ push();
   
 pop();
   
+ //en el elipse azul quise jugar con la percepción de los segundos, el tamaño del círculo depende de los minutos, pero avanza como si esos fueran los segundos//
 push();
   noFill();
   stroke('blue')
@@ -73,12 +76,14 @@ push();
   
 pop();
   
+ //rectángulo al costado derecho su tamaño depende de segundos y minutos//
 push();
   noFill();
   stroke(0,200,200)
   rect(width/2, height/2, segundo,minuto);
 pop();
   
+ //línea roja inferior que pareciera que da los segundos//
   push();
   
   stroke('red')
@@ -88,5 +93,7 @@ pop();
      dir= -dir
      }
   pop();
+  
+  //en este reloj se puede elegir cual de las figuras se desea que de los segundos//
   
 }
