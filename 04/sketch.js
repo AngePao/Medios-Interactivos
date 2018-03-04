@@ -19,6 +19,7 @@ var boton5y = 40;
 var boton5tam = 20;
 
 var boton6x = 40;
+
 var boton6y = 70;
 var boton6tam = 20;
 
@@ -45,39 +46,61 @@ var colorSelect = 0;
 
 function setup() {
 	
+	//espacio de trabajo//
 	createCanvas(windowWidth, windowHeight);
+	//color de fondo blanco//
 	background(250, 250,250);
 
 }
 
 function draw() {
 	 
+	//rectángulo blanco que encierra los botones//
 	fill(255);
 	rect(0, 0, 220, 120);
 
+	//cuadrado pequeño negro//
 	fill(0, 0, 0);
 	rect(boton1x, boton1y, boton1tam, boton1tam);
+	
+	//cuadrado pequeño blanco//
 	fill(255, 255, 255);
 	rect(boton2x, boton2y, boton2tam, boton2tam);
+	
+	//cuadrado pequeño café//
 	fill(200, 100, 0);
 	rect(boton3x, boton3y, boton3tam, boton3tam);
+	
+	//cuadrado pqueño azul//
 	fill(0, 100, 255);
 	rect(boton4x, boton4y, boton4tam, boton4tam);
+	
+	//cuadrado pequeño amarillo//
 	fill(255, 204, 0);
 	rect(boton5x, boton5y, boton5tam, boton5tam);
+	
+	//cuadrado pequeño morado//
 	fill(150, 100, 255);
 	rect(boton6x, boton6y, boton6tam, boton6tam);
+	
+	//cuadrado pequeño verde//
 	fill(150, 255, 150);
 	rect(boton7x, boton7y, boton7tam, boton7tam);
+	
+	//cuadrado pequeño magenta//
 	fill('magenta');
 	rect(boton8x, boton8y, boton8tam, boton8tam);
+	
+	//cuaddrado pequeño cyan//
 	fill('cyan');
 	rect(boton9x, boton9y, boton9tam, boton9tam);
+	
+	//cuadrado pequlo rojo//
 	fill('red');
 	rect(boton10x, boton10y, boton10tam, boton10tam);
 
 
-
+//condicional de que pase algo si el mouse esta presionado en los botones//
 	if (mouseIsPressed) {
 		
 		if (mouseX > boton1x && mouseX < boton1y + boton1tam &&
