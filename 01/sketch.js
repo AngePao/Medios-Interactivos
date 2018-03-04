@@ -1,4 +1,5 @@
 function setup() { 
+	
 	//tamaño de espacio de trabajo//
   createCanvas(400, 400); 
 	//Color del fondo cafe claro con transparencia//
@@ -32,4 +33,5 @@ strokeWeight (1);
 	//línea negra inferior//
 	strokeWeight (2);
   line(20,370, 300, 370) 
+	
 }
