@@ -102,90 +102,129 @@ function draw() {
 
 //condicional de que pase algo si el mouse esta presionado en los botones//
 	if (mouseIsPressed) {
-		
+		//para el botón negro//
 		if (mouseX > boton1x && mouseX < boton1y + boton1tam &&
 			mouseY > boton1x && mouseY < boton1y + boton1tam) {
 			herramienta = 0;
 		}
+		
+		//para el botón blanco//
 		if (mouseX > boton2x && mouseX < boton2x + boton2tam &&
 			mouseY > boton2y && mouseY < boton2y + boton2tam) {
 			herramienta = 1;
 		}
+		
+		//para el botón café//
 		if (mouseX > boton3x && mouseX < boton3x + boton3tam &&
 			mouseY > boton3y && mouseY < boton3y + boton3tam) {
 			herramienta = 2;
 		}
+		
+		//para el botón azul//
 		if (mouseX > boton4x && mouseX < boton4x + boton4tam &&
 			mouseY > boton4y && mouseY < boton4y + boton4tam) {
 			herramienta = 3;
 		}
+		
+		//para el botón amarillo//
 		if (mouseX > boton5x && mouseX < boton5x + boton5tam &&
 			mouseY > boton5y && mouseY < boton5y + boton5tam) {
 			herramienta = 4;
 		}
+		
+		//para el botón morado//
 		if (mouseX > boton6x && mouseX < boton6x + boton6tam &&
 			mouseY > boton6y && mouseY < boton6y + boton6tam) {
 			herramienta = 5;
 		}
+		
+		//para el botón verde//
 		if (mouseX > boton7x && mouseX < boton7x + boton7tam &&
 			mouseY > boton7y && mouseY < boton7y + boton7tam) {
 			herramienta = 6;
 		}
+		
+		//para el botón magenta//
 		if (mouseX > boton8x && mouseX < boton8x + boton8tam &&
 			mouseY > boton8y && mouseY < boton8y + boton8tam) {
 			herramienta = 7;
 		}
+		
+		//para el botón cyan//
 		if (mouseX > boton9x && mouseX < boton9x + boton9tam &&
 			mouseY > boton9y && mouseY < boton9y + boton9tam) {
 			herramienta = 8;
 		}
+		
+		//para el botón rojo//
 		if (mouseX > boton10x && mouseX < boton10x + boton10tam &&
 			mouseY > boton10y && mouseY < boton10y + boton10tam) {
 			herramienta = 9;
 		}
 		
+	//condicionales para decir que pusiera color al oprimir el mouse//
 		
+		//para el botón negro//
 		if (mouseX > boton1x && mouseX < boton1x + boton1tam &&
 			mouseY > boton1y && mouseY < boton1y + boton1tam) {
 			colorSelect = 0;
 		}
+		
+		//para el botón blanco//
 		if (mouseX > boton2x && mouseX < boton2x + boton2tam &&
 			mouseY > boton2y && mouseY < boton2y + boton2tam) {
 			colorSelect = 1;
 		}
+		
+		//para el botón café//
 		if (mouseX > boton3x && mouseX < boton3x + boton3tam &&
 			mouseY > boton3y && mouseY < boton3y + boton3tam) {
 			colorSelect = 2;
 		}
+		
+		//para el botón azul//
 		if (mouseX > boton4x && mouseX < boton4x + boton4tam &&
 			mouseY > boton4y && mouseY < boton4y + boton4tam) {
 			colorSelect = 3;
 		}
+		
+		//para el botón amarillo//
 		if (mouseX > boton5x && mouseX < boton5x + boton5tam &&
 			mouseY > boton5y && mouseY < boton5y + boton5tam) {
 			colorSelect = 4;
 		}
+		
+		//para el botón morado//
 		if (mouseX > boton6x && mouseX < boton6x + boton6tam &&
 			mouseY > boton6y && mouseY < boton6y + boton6tam) {
 			colorSelect = 5;
 		}
+		
+		//para el botón verde//
 		if (mouseX > boton7x && mouseX < boton7x + boton7tam &&
 			mouseY > boton7y && mouseY < boton7y + boton7tam) {
 			colorSelect = 6;
 		}
+		
+		//para el botón magenta//
 		if (mouseX > boton8x && mouseX < boton8x + boton8tam &&
 			mouseY > boton8y && mouseY < boton8y + boton8tam) {
 			colorSelect = 7;
 		}
+		
+		//para el botón cyan//
 		if (mouseX > boton9x && mouseX < boton9x + boton9tam &&
 			mouseY > boton9y && mouseY < boton9y + boton9tam) {
 			colorSelect = 8;
 		}
+		
+		//para el botón rojo//
 		if (mouseX > boton10x && mouseX < boton10x + boton10tam &&
 			mouseY > boton10y && mouseY < boton10y + boton10tam) {
 			colorSelect = 9;
 		}
-
+		
+//condicionales para indicar que color sale al presionar el botón//
 		if (colorSelect == 0) {
 			fill(0, 0, 0);
 		}
@@ -216,6 +255,8 @@ function draw() {
 		if (colorSelect == 9) {
 			fill('red');
 		}
+		
+//condicionales que indican que hacer cuando el mouse esta presionado//
 		
 		if (herramienta == 0) {
 			ellipse(mouseX , mouseY , 10, 10);
