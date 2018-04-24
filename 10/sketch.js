@@ -24,10 +24,7 @@ function draw() {
   posY = 50;
 
   //Condicionales para que cambie de color 
-  if(mouseY < 200){
-   fill ("purple");
-  }
-  
+   
   
   if (mouseX < 300) {
     miFecha = "2005-2010";
